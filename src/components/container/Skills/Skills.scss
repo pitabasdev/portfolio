@@ -1,0 +1,102 @@
+.select {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    
+    button {
+        color: #000;
+            background: #fff;
+            padding: 0.65rem 1rem;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            border: none;
+            margin-top: 1rem;
+            font-family: "Poppins";
+
+            &.active {
+                background: #8c12f0;
+                color: #fff;
+            }
+    }
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  row-gap: 4rem;
+
+  @media screen and(max-width: 500px) {
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+  }
+  .tools {
+    display: flex;
+    justify-content: center;
+    svg {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        color: #fff;
+    }
+  }
+}
+.experiencs {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+    color: #fff;
+    .experience {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      span {
+          font-size: 1.75rem;
+          padding-left: 2.5rem;
+
+          @media screen and(max-width: 405px) {
+            font-size: 1rem;
+          }
+        }        
+        .position {
+          width: 300px;
+          padding-left: 2.5rem;
+           h3 {
+             font-size: 1.1rem;
+             @media screen  and(max-width: 405px){
+               font-size: 0.85rem;
+             }
+           }
+          p {
+            font-size: 0.75rem;
+            opacity: 0.6;
+
+            @media screen and(max-width: 405px) {
+              font-size: 0.65rem;
+            }
+          }
+        }
+    }
+  
+}
+
+.finishes_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: #fff;
+
+  .number {
+    color: #8c12f0;
+    font-size: 1.7rem;
+  }
+}
